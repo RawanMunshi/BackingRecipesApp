@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp">
+
+    <ImageView
+        android:id="@+id/recipe_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/nutellapie" />
+
+    <TextView
+        android:id="@+id/recipe_label_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/recipe_iv"
+        android:background="@color/imageLabelBackground"
+        android:fontFamily="cursive"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/imageLabel"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="nutella_pie" />
+</RelativeLayout>

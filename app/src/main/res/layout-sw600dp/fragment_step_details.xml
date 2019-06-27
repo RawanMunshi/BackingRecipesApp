@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_container"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mediaView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/video_height"
+            android:layout_margin="16dp"
+            android:background="@android:color/black">
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/playerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/video_height"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent"
+                android:contentDescription="@string/step_media"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nomedia"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/step_full_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/SecondaryColorAccent"
+            android:fontFamily="serif"
+            android:gravity="fill_horizontal"
+            android:padding="8dp"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/previous_button"
+            style="@style/button_style"
+            android:text="@string/previous_button_label" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/button_style"
+            android:text="@string/next_button_label" />
+    </LinearLayout>
+
+</RelativeLayout>

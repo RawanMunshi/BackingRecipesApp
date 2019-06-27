@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Baking Recipes</string>
+    <string name="nutella_pie">Nutella Pie</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="error_message_no_connection">
+        There is no Internet connection. Please, check your network and try again. </string>
+    <string name="widget_button_label">Add ingredients list to home screen</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="recipe_steps_label">Recipe Steps</string>
+    <string name="ingredient_list_label">Ingredient List</string>
+    <string name="empty_widget_text">When you add Ingredient List to the screen home it will appear here</string>
+    <string name="previous_button_label">previous step</string>
+    <string name="next_button_label">next step</string>
+    <string name="step_media">step media</string>
+    <string name="step_example">Recipe Introduction</string>
+</resources>
